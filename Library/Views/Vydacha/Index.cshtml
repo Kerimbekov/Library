@@ -1,0 +1,16 @@
+﻿@model VydachaBindingModel
+
+<form asp-controller="Vydacha" asp-action="Submit">
+
+    <select asp-for="@Model.SelectedValue"
+            asp-items="@(new SelectList(Model.ReaderItems,"ReaderId","Name"))">
+        <option>Please select one</option>
+    </select>
+    <select asp-for="@Model.MultiValue"
+            asp-items="@(new SelectList(Model.BookItems,"BookId","Name"))">
+        <option>Please select one</option>
+    </select>
+
+    <input type="submit" />
+
+</form>

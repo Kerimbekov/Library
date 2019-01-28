@@ -1,0 +1,48 @@
+﻿@model Library.Data.Models.Reader
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reader</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Adress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Adress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BiletId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BiletId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BirthYear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhomeNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhomeNumber)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ReaderId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
